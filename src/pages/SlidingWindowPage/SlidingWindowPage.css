@@ -1,7 +1,12 @@
 .sliding-window-page {
-	height: 100%;
+	position: relative;
+	height: calc(100% - 52px);
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+}
+.usecase-container {
+	width: 60vw;
+	margin: 0px 20px;
 }
