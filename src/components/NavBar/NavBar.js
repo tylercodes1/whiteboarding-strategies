@@ -10,6 +10,9 @@ export default function NavBar() {
 					<NavLink to="/" className="nav-links">
 						Home
 					</NavLink>
+					<NavLink to="/sliding-window" className="nav-links">
+						Sliding Window
+					</NavLink>
 					<NavLink to="/test" className="nav-links">
 						Test
 					</NavLink>
