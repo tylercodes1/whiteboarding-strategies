@@ -5,17 +5,51 @@
 	flex-direction: row;
 	align-items: center;
 	background-color: white;
-	box-shadow: 0px 10px 1000px #888888, 0px 2px black;
+	box-shadow: 0px 10px 1000px #888888;
+	border-bottom: 2px solid;
 }
 
 .nav-links {
 	background-color: lightblue;
-	margin: 0px 5px;
+	margin-bottom: 2px;
+	height: 30px;
+	width: 100%;
 	list-style: none;
 	color: black;
 	text-decoration: none;
 }
 
 .nav-links:hover {
-	box-shadow: 0px 2px black;
+	margin-bottom: 0px;
+	border-bottom: 2px solid;
+}
+
+.dropdown {
+	/* height: 100%; */
+	height: calc(100% + 2px); /* make space for the border */
+	position: relative;
+	padding: 0px 20px;
+	border-bottom: 2px solid; /* Need to give this div border to sustain dropdown*/
+	/* float: left; */
+	/* overflow: hidden; Not really sure what this is for */
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-content {
+	margin-top: 2px;
+	left: 0px;
+	top: 100%;
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	position: absolute; /* prevents the button from moving on hover*/
+}
+
+.dropdown:hover .dropdown-content {
+	display: flex;
+}
+
+.dropdown:hover {
+	background-color: rgba(242, 204, 104, 1);
 }
