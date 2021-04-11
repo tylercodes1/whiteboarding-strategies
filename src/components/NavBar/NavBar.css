@@ -12,7 +12,7 @@
 .nav-links {
 	background-color: lightblue;
 	margin-bottom: 2px;
-	height: 30px;
+	min-height: 30px;
 	width: 100%;
 	list-style: none;
 	color: black;
@@ -26,14 +26,12 @@
 
 .dropdown {
 	z-index: 100;
-	/* height: 100%; */
 	height: calc(100% + 2px); /* make space for the border */
 	position: relative;
-	padding: 0px 20px;
+	width: 150px;
 	border-bottom: 2px solid; /* Need to give this div border to sustain dropdown*/
-	/* float: left; */
-	/* overflow: hidden; Not really sure what this is for */
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
